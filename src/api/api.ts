@@ -65,7 +65,7 @@ class Api
         const run = await this.openai.beta.threads.runs.create(
             this.thread.id,
             {
-                assistant_id: "asst_UyOzzObdq3Y35bmfP7eauoZM",
+                assistant_id: import.meta.env.VITE_OPENAI_ASSISTANT_ID,
             }
         )
         this.run = run
